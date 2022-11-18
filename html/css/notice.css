@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.aside{
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+}
+.aside a{
+    color: black;
+}
+.aside h2{
+    border-top: 1px solid gray;
+    font-size: 25px;
+    line-height: 40px;
+}
+.aside h3{
+    font-size: 15px;
+    line-height: 30px;
+}
+.aside p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.aside1{
+    margin-top: 20px;
+    border-top: 1px solid gray;
+}
+.helpme{
+    display: inline-block;
+    margin-top: 30px;
+}
+.notice{
+    line-height: 50px;
+    margin-top: 20px;
+}
+.notice h1{
+    font-size: 35px;;
+}
+.notice h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+.notice h3{
+    font-size: 18px;
+}
+.noticepyo{
+  width: 880px;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: 90px;
+}
+table {    
+    
+    border-collapse: collapse;
+}
+tr{
+    border-top: 1px solid gray;
+}
+.noticepyo th{
+    text-align: left;
+}
+
+.noticepyo th:nth-child(2){
+    text-align: center;
+}
+td>a{
+    color: black;
+}
+td a:visited{
+    color: black;
+}
+td a:hover, td a:focus{
+    color: gray;
+}
+
+.noticepyo tr,.noticepyo td,.noticepyo th{
+    padding: 10px;
+}
+.notbtn2{
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+#pds>h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.del2{
+    margin-top: 20px;
+    text-align: center;
+}
+.del2 li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.del2 li h2 {
+    font-size: 12px;
+    text-align: center;
+}
+.del2 li h2 a{
+    color: black;
+}
+.del2 li h2 a:hover, .del2 li h2 a:focus{
+    color: gray;
+}
+.del2>li>h2>a {
+    cursor: pointer;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--폰의 글꼴 크기에 맞게 보이게함.-->
+        <meta name="author" content="kibeom seo"><!--작성자이름정의-->
+        <meta name="keywords" content="유기견, 유기견분양, 강아지고양이분양"><!--content안의 내용 검색하면 내 카페가 검색되게 만듬-->
+        <meta name="description" content="유기견 분양 받기"><!-- 이페이지에 대한 소개-->
+        <meta name="robots" content="all"><!--검색을 해주는 로봇에 필요한 정보를 다 넣는다-->
+        <title>공지사항 게시판</title>
+        <link rel="shortcut icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/common.css?ver=1">
+        <link rel="stylesheet" href="css/notice.css?ver=1">
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Nanum+Pen+Script&display=swap" rel="stylesheet">  
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/Licom.js"></script>      
+    </head>
+    <body>
+        <!--건너뛰기 링크-->
+        <a id="skipNav" href="#">본문 바로가기</a> 
+        <!--건너뛰기 링크 종료-->
+    
+       <!--헤더 영역-->
+       <header>
+                <div id="banner">      
+                    <ul class="infoLink">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="index.html"><img src="images/logo.png" alt="이미지"></a></li>
+                    </ul>
+                    <ul class="trans">
+                        <li><a href=#>ENG</a></li>
+                        <li><a href=#>中文</a></li>
+                        <li><a href=#>日文</a></li>
+                        <li><a href="#">한국어</a></li>
+                    </ul>
+                </div>
+                
+    
+            <div class="navigation">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">입양하기</a>
+                        <ul class="aboutipyang">
+                            <li><a href="#">강아지</a></li>
+                            <li><a href="#">고양이</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropbtn">입양절차</a></li>
+                    <li><a href="#" class="dropbtn">입양후기</a></li>
+                    <li><a href="#" class="dropbtn">리컴스쿨</a></li>
+                    <li><a href="noitce.html" class="dropbtn">고객센터</a>
+                        <ul class="abouthelp">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하시는 질문</a></li>
+                            <li><a href="#">1대1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2 class="hidden">검색</h2>
+                        <form action="search,jsp" method="get" id="searchForm">
+                            <input type="search" id="keyword" name="keyword" placeholder="검색" required><!--텍스트, 서치 x 누르면 삭제-->
+                            <button type="button">검색</button>
+                        </form>
+                    <!-- input 타입은 검색이 힘듬-->
+            </div>
+                            
+    <!--메뉴 (보통 ul-li로 만듦, 하위 메뉴도 ul-li로 만듦), 메뉴 클릭 시 보통 앵커 걸려있어 넘어가지만 지금은 빈페이지, 호버 시 하위메뉴 내려오게 class함(똑같은 디자인으로 꾸밀 예정)-->
+    </header>
+<div id="contents">
+         <div class="board">
+            <div class="notice">
+                <h1>고객센터</h1>
+                <h2>빠른 상담을 원하신다면 채팅상담을 이용하세요.</h2>
+                <h3>고객센터 운영시간 : 09:00~18:00/설,추석당일만 휴무</h3>
+            </div>
+            <div class="aside">
+                <h2><a href="#">메뉴</a></h2>
+                <h3><a href="#">공지사항</a></h3>
+                <h3><a href="#">1:1문의하기</a></h3>
+                <h3><a href="#">리컴뉴스</a></h3>
+                <h3><a href="#">채팅문의</a></h3>
+                <h3><a href="noitce.html">고객센터</a></h3>
+                <p class="aside1">02)2216.2316</p>
+                <p>09:00~18:00</p>
+                <h3>은행계좌</h3>
+                <p>신한은행</p>
+                <p>746-04-173981</p>
+            </div>
+            <div class="helpme">
+                <table class="noticepyo"><!--table border=1 안줌-->
+                    <tr>
+                        <th>번호</th><th>제목</th><th>날짜</th><th>작성자</th><th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><a href="#">저희 리컴패밀는 365일 연중무휴입니다.</a></td>
+                        <td>2022.06.03</td>
+                        <td>서기범</td>
+                        <td>215</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><a href="#">리컴스쿨 입학을 위한 서류안내입니다.</a></td>
+                        <td>2022.06.01</td>
+                        <td>서기범</td>
+                        <td>192</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="#">유기견 입양을 위해 준비해주셔야할 서류입니다.</a></td>
+                        <td>2022.05.28</td>
+                        <td>서기범</td>
+                        <td>172</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="#">리컴패밀리 제휴업체를 소개합니다.</a></td>
+                        <td>2022.03.05</td>
+                        <td>서기범</td>
+                        <td>244</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="#">아이들을 만나기 위한 방역 지침</a></td>
+                        <td>2022.01.19</td>
+                        <td>서기범</td>
+                        <td>572</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="#">코로나19로 인한 온라인 입양 시스템 시작</a></td>
+                        <td>2022.01.12</td>
+                        <td>서기범</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#">리컴패밀리 대한민국 반려동물 문화세상 대상</a></td>
+                        <td>2022.01.01</td>
+                        <td>서기범</td>
+                        <td>345</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#">크리스마스 기념 입양 이벤트</a></td>
+                        <td>2022.12.25</td>
+                        <td>서기범</td>
+                        <td>785</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#">주위에서 유기 동물을 발견시 리컴패밀리로 전화주세요.</a></td>
+                        <td>2022.12.1</td>
+                        <td>서기범</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#">리컴패밀리 홈페이지 리뉴얼</a></td>
+                        <td>2022.11.19</td>
+                        <td>서기범</td>
+                        <td>864</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="pds">
+                <h2 class="notbtn2">리컴뉴스</h2>
+                <h3>리컴패밀리의 소식을 만나보세요</h3>
+                <ul class="del2">
+                    <li>
+                        <a href="#"><img src="images/업무협약.jpg" alt="협약"></a>
+                        <h2><a href="#">고려대 병원, 연세 세브란스 리컴패밀리와 협약 체결</a></h2>
+                    </li>
+                     <li>
+                        <a href="#"><img src="images/식스센스출현.png" alt="식스센스"></a>
+                        <h2><a>리컴패밀리 막내 우기 식스센스3 8화 출현</a></h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/운동회.jpg" alt="운동회"></a>
+                        <h2><a>리컴운동회 역대 최다 참가자 참여 .. 우승은 말티즈 팀!</a></h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+          
+        <footer id="footer">
+            <div id="footerInner">
+                <address>
+                    <div id="introduce">
+                        <p>서울시 동대문구 장한로27가길 37</p>
+                        <p><span>전화번호:02-2216-2316</span></p>
+                        <p>E-MAIL : <a href="mailto.seokb14@naver.com">seokb14@naver.com</a></p>
+                        <p class="copyright">연중 무휴 고객센터 : 09:00~18:00</p>    
+                    </div>
+                    <div id="introduce1">
+                        <p><span>리컴패밀리</span></p>
+                        <p>대표 : 서기범</p>
+                        <p>사업자번호:101-28-13924</p>
+                        <p>동물판매번호:3530000-037-2020-0022</p>
+                    </div>
+                    <div id="introduce2">
+                        <ul>
+                            <li><a href="http://www.instagram.com"><img src="images/인스타그램.png" alt=""></a></li>
+                            <li class="introimg"><a href="https://www.facebook.com/"><img src="images/페이스북.png" alt=""></a></li>
+                            <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="images/pngwing.com2.png" alt="" ></a></li>
+                        </ul>
+                        <a href="index.html"><img src="images/logo.png" alt="LICOMFAMILY"></a>
+                    </div>
+                </address>
+            </div>
+    </footer>   
+    <!--푸터 영역 종료-->
+    </div>
+    
+    <!--#wrapper 종료-->
+    
+</body>
+    
+    </html>
+

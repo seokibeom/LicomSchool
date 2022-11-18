@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licom Family</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #fff;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav a:link, a:visited{
+            color: #fff;
+        }
+        nav a:active{
+            color: yellow;
+        }
+        h1{
+            font-size: 1.8em;
+        }
+        h2{
+            font-size: 1.3em;
+        }
+        p{
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        li{
+            font-size: 1em;
+            line-height: 2;
+        }
+        #container{
+            width: 100%;
+        }
+        header{
+            width: 100%;
+            height: 300px;
+            background: url(images/logo.png) no-repeat center;
+            background-size: auto;
+        }
+        nav{
+            height: 50px;
+            background-color: #000;
+        }
+        #main-nav{
+            list-style: none;
+            padding: 10px;
+        }
+        #main-nav li {
+            display: inline-block;
+            color: #fff;
+            font-size: 0.8em;
+            padding: 5px 15px;
+        }
+        .photo{
+            text-align: center;
+        }
+        .photo img{
+            width: 100%;
+        }
+        .help12{
+            border: 1px solid white;
+        }
+        ol{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        footer{
+            background-color: #000;
+        }
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#intro">리컴패밀리소개</a></li>
+                    <li><a href="#school">리컴스쿨</a></li>
+                    <li><a href="#help">고객센터</a></li>
+                </ul>
+            </nav>  
+        </header>
+        <section id="intro">
+            <div class="page-title">
+                <h1>리컴패밀리소개</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="images/logo.png" alt="배너">
+                </div>
+                <div class="text">
+                    <p>영업시간 : 오전 9시 ~ 밤 10시</p>
+                    <p>휴무 : 연중무휴(<i><small>
+                        설,추석 당일만 휴무
+                    </small></i>)</p>
+                </div>
+            </div>
+        </section>
+        <section id="school">
+            <div class="page-title">
+                <h1>리컴스쿨</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="images/school.png" alt="리컴스쿨">
+                </div>
+                <div class="text">
+                    <p>입양 후 리컴스쿨에서 반려동물 교육 프로그램 참여</p>
+                    <p>고양이,강아지 합사 및 다양한 훈련을 만나보세요.</p>
+                </div>
+            </div>
+        </section>
+        <section id="help">
+            <div class="page-title">
+                <h1>고객센터</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img class="help12" src="images/noticebanner.jpg" alt="고객센터">
+                </div>
+                <div class="text">
+                    <h2>자주하시는 질문</h2>
+                    <ol>
+                        <li>유기동물 입양시 발생하는 비용은 아예 없는건가요 ?</li>
+                        <li>리컴스쿨의 프로그램은 무엇이 있나요 ?</li>
+                        <li>입양시 예방접종도 같이 가능한가요 ?</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Live with Companion Animal</p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/*초기화*/
+/*기존 마진과 패딩 초기화*/
+html, body, div, header, section,footer,ul, ol, li, h1, h2, h3, p{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+/*웹 폰트*/
+
+@font-face{
+    font-family:"webcafeIcon";
+    font-weight: 400;
+    src: url("font/webcafeIcon.eot?#iefix")format("embedded-opentype"),
+         url("font/webcafeIcon.woff?#iefix")format("woff"),
+         url("font/webcafeIcon.ttf?#iefix")format("truetype"),
+         url("font/webcafeIcon.svg#webcaferegular")format("svg");
+}
+/*링크 스타일*/
+a:link{
+    color: #4f4f4f;
+    text-decoration: none;
+}
+a:visited{
+    color: #8a8e91;
+    text-decoration: none;
+}
+a:hover, a:focus{
+    color: #f00;
+    text-decoration: none;
+}  
+/*기본 스타일*/
+body{
+    color: #000;
+    background-color: #fff;
+    font-size: 0.75em; /*12px*/
+    line-height: 1.2;
+} 
+/*건너뛰기 링크*/
+#skipNav{
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus{
+    left: 50%;
+    margin: 3px 0 0 -3em;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+#wrapper{
+    background-image: linear-gradient(to bottom, white 0%, rgb(234,234,234));
+}
+
+/*전체적인 레이아웃 설계*/
+header, #contents, #animation_canvas, #slogun, #footerInner,#wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header{
+    height: 90px;
+    position: relative;
+    background-color: white;
+    border: 0;  
+}
+#banner{
+    height: 100px;
+    position: relative;
+}
+#banner .infoLink li{
+    float: left;
+    margin-right: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+#banner ul img{
+    top: -10px;
+    right: 400px;
+    position: absolute;
+}
+#banner .trans li{ 
+    float: right;
+    margin-left: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.navigation{
+    height: 70px;
+}
+.hidden{
+    position: absolute;
+    left: -9999px;
+}
+.mainMenu{
+    background:white;
+    height: 70px;
+    border-top: 2px solid #000;
+}
+
+.mainMenu li{
+    position: relative;
+}
+.mainMenu li, .mainMenu a{
+    display: inline-block;
+}
+.mainMenu >li > a {
+    font-family: "NanumEX";
+    font-size: 1.5em;
+    padding: 15px 17px 13px;
+    color: black;
+    letter-spacing: 1px;
+}
+.mainMenu >li >a:hover, .mainMenu>li>a:focus{
+    color: blue;
+}
+.mainMenu >li:hover ul{
+    display: block;
+    font-size: 1.2em;
+
+}
+.mainMenu ul {
+    z-index: 10;
+    position: absolute;
+    white-space: nowrap;
+}
+.mainMenu ul a {
+    padding-left: 12px;
+}
+.mainMenu ul a:hover::before, .mainMenu ul a:focus::before{
+    color: blue;
+}
+.aboutipyang{
+    display: none;
+}
+.abouthelp{
+    display: none;
+}
+.navigation {
+    position: relative;
+}
+.navigation  #searchForm{
+    position: absolute;
+    right: 0; top: 10px;
+}
+#footer{
+    margin-top: 50px;
+    height: 400px;
+}
+#footerInner #introduce,#introduce1,#introduce2{
+    display: inline-block;
+    width: 320px;
+    margin-left: 30px;
+}
+#footer #footerInner #introduce{  
+    float: left;
+    line-height: 50px;  
+    font-size: 1.1em;
+}
+#introduce span{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#introduce p,#introduce1 p{
+    font-weight: bold;
+    font-size: 14px;
+}
+#footer #footerInner #introduce1{
+    line-height: 50px;
+    font-size: 1.1em;
+}
+#footer #footerInner #introduce1 span{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#introduce2 ul{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+}
+#introduce2 li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 60px;
+   
+}
+#introduce2 li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+#introduce2 li img{
+    width: 40px;
+    height: 40px;
+}

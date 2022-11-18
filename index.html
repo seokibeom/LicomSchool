@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--폰의 글꼴 크기에 맞게 보이게함.-->
+        <meta name="author" content="kibeom seo"><!--작성자이름정의-->
+        <meta name="keywords" content="유기견, 유기견분양, 강아지고양이분양"><!--content안의 내용 검색하면 내 카페가 검색되게 만듬-->
+        <meta name="description" content="유기견 분양 받기"><!-- 이페이지에 대한 소개-->
+        <meta name="robots" content="all"><!--검색을 해주는 로봇에 필요한 정보를 다 넣는다-->
+        <title>Licom Family</title>
+        <link rel="shortcut icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" type="text/css" href="css/index.css?ver=1">
+        <link rel="stylesheet" type="text/css" href="css/common.css?ver=1">
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Nanum+Pen+Script&display=swap" rel="stylesheet">  
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/Licom.js"></script>    
+        <script>
+            let smartPhones=[
+                'iphone','ipod','ipad','opera mini','opera mobi','nokia','android','webos','windows ce','blackberry','iemobile','sonye  ricsson'
+            ];
+            for(let i in smartPhones){
+                if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
+                    document.location='http://seokb14.dothome.co.kr/mindex.html';
+                }
+            }
+        </script>  
+    </head>
+    <body>
+        <!--건너뛰기 링크-->
+        <a id="skipNav" href="#">본문 바로가기</a> 
+        <!--건너뛰기 링크 종료-->
+      <div id="wrapper">
+       <!--헤더 영역-->
+       <header>
+               <div id="banner">      
+                   <ul class="infoLink">
+                       <li><a href="#">Login</a></li>
+                       <li><a href="./join.html">Join</a></li>
+                       <li><a href="./index.html"><img src="images/logo.png" alt="이미지"></a></li>
+                   </ul>
+                   <ul class="trans">
+                       <li><a href=#>ENG</a></li>
+                       <li><a href=#>中文</a></li>
+                       <li><a href=#>日文</a></li>
+                       <li><a href="#">한국어</a></li>
+                   </ul>
+               </div>
+               
+       
+           <div class="navigation">
+               <h2 class="hidden">메인메뉴</h2>
+               <ul class="mainMenu">
+                   <li><a href="#">입양하기</a>
+                       <ul class="aboutipyang">
+                           <li><a href="#">강아지</a></li>
+                           <li><a href="#">고양이</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#" class="dropbtn">입양절차</a></li>
+                   <li><a href="#" class="dropbtn">입양후기</a></li>
+                   <li><a href="#" class="dropbtn">리컴스쿨</a></li>
+                   <li><a href="noitce.html" class="dropbtn">고객센터</a>
+                       <ul class="abouthelp">
+                           <li><a href="#">공지사항</a></li>
+                           <li><a href="#">자주하시는 질문</a></li>
+                           <li><a href="#">1대1문의</a></li>
+                       </ul>
+                   </li>
+               </ul>
+               <h2 class="hidden">검색</h2>
+                       <form action="search,jsp" method="get" id="searchForm">
+                           <input type="search" id="keyword" name="keyword" placeholder="검색" required><!--텍스트, 서치 x 누르면 삭제-->
+                           <button type="button">검색</button>
+                       </form>
+                   <!-- input 타입은 검색이 힘듬-->
+           </div>
+                           
+       <!--메뉴 (보통 ul-li로 만듦, 하위 메뉴도 ul-li로 만듦), 메뉴 클릭 시 보통 앵커 걸려있어 넘어가지만 지금은 빈페이지, 호버 시 하위메뉴 내려오게 class함(똑같은 디자인으로 꾸밀 예정)-->
+       </header>
+    </div>
+      
+<!--메인 이미지 영역-->
+<div id="contents">
+<div id="animation_canvas">
+    <div class="slider_panel">
+        <div class="slider_image">
+            <div class="qosj1"><img src="images/배너1.png" alt="배너1">
+                <div class="qosjapsxm">
+                <h1>상처입은 반려동물들의 주인이 되어주세요</h1>
+                <h2>Live Companion Animal</h2>
+                <h3>리컴패밀리</h3>
+                </div>
+            </div>
+        </div>
+        <div class="slider_image" >
+            <div class="qosj2"><img src="images/배너2.png" alt="배너1">
+            <div class="qosjapsxm">
+                <h1>강아지와 고양이의 올바른 합사</h1>
+                <h2>입양 후 리컴스쿨에서 만나보세요</h2>
+                <h3>입양 후 <span>훈련 교육</span></h3>
+            </div>
+        </div>
+        </div>
+        <div class="slider_image">
+            <div class="qosj3"><img src="images/배너3.png" alt="배너1">
+            <div class="qosjapsxm">
+                <h1>리컴패밀리 협력업체</h1>
+                <h2>연1회 무료 검강검진</h2>
+                <h3>삼성 애니펫 <span>50% 할인</span></h3>
+            </div>
+        </div>
+        </div>
+        <div class="slider_image">
+            <div class="qosj4"><img src="images/배너4.png" alt="배너1">
+            <div class="qosjapsxm">
+                <h1>예약하기</h1>
+                <h2>02-2216-2316</h2>
+                <h3>리컴패밀리 친구들을 서둘러 만나보세요</h3>
+            </div>
+        </div>
+        </div>
+    <!--현재는 메인 이미지 한개지만 추후 이미지 슬라이드 해서 여러 이미지 넣고 넘겨볼 수 있음(호버는 되지만 클릭 시 움직임은 불가능: 자바 스크립트로 가능)-->
+    </div><!--이미지 겹쳐서 글 넣기, h1(제목) 여기에 넣거나 혹은 여길 h2로 하고 p태그로 설명달고 헤더 로고쪽을 제목으로 h1 혹은 이미지 넣어도 됨-->
+    <div class="control_panel">
+        <div class="control_button"></div>
+        <div class="control_button"></div>
+        <div class="control_button"></div>
+        <div class="control_button"></div>
+    </div>
+    <div class="left_right_control_panel">
+        <img class="left_control" src="images/leftArrow.png" alt="">
+        <img class="right_control" src="images/rightArrow.png" alt="">
+     </div>
+</div>
+
+<!--컨텐츠 영역-->
+
+    <div id="Area1">
+        <div class="pic1">
+            <a href="#" >
+                <img src="images/introCompany.jpg" alt="">
+            </a>
+            <p class="hidden">기업소개</p>
+        </div>
+        <div class="pic2">
+            <a href="#">
+                <img src="images/ipyang.jpg" alt="">
+            </a>
+            <P class="hidden">입양절차</P>
+        </div>
+        <div class="pic3" >
+            <a href="#">
+                <img src="images/리컴스쿨1.png" alt="">
+            </a>
+            <p class="picban">리컴스쿨</p>
+        </div>
+        <div class="pic4" >
+            <a href="#">
+                <img src="images/리컴스쿨.png" alt="">
+            </a>
+            <p class="picban">간식사이트</p>
+        </div>
+        <div class="pic5">
+            <a href="#">
+                <img src="images/예약하기.png" alt="">
+            </a>
+            <p class="hidden">예약문의</p>
+        </div>
+    </div>
+    <div id="Area2">
+        <h1>리컴패밀리에서 입양하시면 ? <br>리컴에서 입양하시고 다양한 혜택을 만나보세요!</h1>
+        <img id="gift" alt="선물" src="images/gift.jpg">
+        <div class="Event1">
+            <p>이달의 이벤트</p>
+            <a href="#">
+                <img src="images/event.png" alt="이벤트">
+            </a>
+            <button class="wow" type="submit" onclick="location.href = '#'">이벤트 바로가기</button>
+        </div>
+        <div class="Event2">
+            <p>리컴패밀리 협력업체</p>
+            <a href="#">
+                <img src="images/jehyu.png" alt="제휴사">
+            </a>
+            <button class="wow" type="submit" onclick="location.href='#'">제휴사 바로가기</button>
+        </div>
+        <div class="Event3">
+            <p>입양 혜택</p>
+            <a href="#">
+                <img src="images/hyetak.jpg" alt="혜택">
+            </a>
+            <button class="wow" type="submit" onclick="location.href='#'">혜택<br> 바로가기</button>
+        </div>
+    </div>
+    <div id="Area3">
+            <h3>PUPPY<br>리컴패밀리의 강아지친구들을 소개합니다!</h3>
+            <ul class="dog-list">
+            <li>
+                <a href="martiz.html"><img src="images/dogparcel1.jpg" alt="말티즈"></a>
+                <a href="martiz.html"><div class="caption">
+                        <p>말티즈</p>
+                        <p>이름 : 우기</p>
+                        <P>성별 : 여아</P>
+                        <p>나이 : 3살</p>
+                        <p>접종 : 접종2차</p>
+                        <p>귀여운 애교쟁이</p>
+                </div></a>
+            </li>
+            <li><a href=#><img src="images/parceldog2.jpg" alt="비숑"></a>
+                <a href="#">
+                    <div class="caption">
+                    <p>비숑</p>
+                    <p>이름 : 한스</p>
+                    <P>성별 : 남아</P>
+                    <p>나이 : 1살</p>
+                    <p>접종 : 접종2차</p>
+                    <p>멋쟁이 신사</p>
+                </div>
+                </a>    
+            </li>
+            <li><a href=#><img src="images/parceldog3.jpg" alt="푸들"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>푸들</p>
+                    <p>이름 : 루아</p>
+                    <P>성별 : 여아</P>
+                    <p>나이 : 1살</p>
+                    <p>접종 : 접종2차</p>
+                    <p>멋쟁이 여전사</p>
+                </div>
+                </a>
+            </li>
+            <li><a href=#><img src="images/parceldog4.jpg" alt="포메라니안"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>포메라니안</p>
+                    <P>성별 : 남아</P>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 접종2차</p>
+                    <p>귀여운 먹보</p>
+                </div>
+                </a>
+            </li>
+            <li><a href=#><img src="images/dogparcel5.jpg" alt="치와와"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>치와와</p>
+                    <p>이름 : 챠챠</p>
+                    <P>성별 : 여아</P>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 접종2차</p>
+                    <p>홍길동 챠챠</p>
+                </div>
+                </a>
+            </li>
+        </ul>
+    <button>강아지 더보기</button>
+    </div>
+   <div id="Area4">
+        <h3>CAT<br>리컴패밀리의 고양이친구들을 소개합니다.</h3>
+        <ul class="cat-list">
+            <li><a href=#><img src="images/catparcel1.jpg" alt="페르시안"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>페르시안</p>
+                    <p>이름 : 아미</p>
+                    <p>성별 : 여아</p>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 2차</p>
+                    <P>우아한 숙녀</P>
+                </div>
+                </a>
+             </li>      
+            
+             <li><a href=#><img src="images/catparcel2.jpg" alt="먼치킨"></a>
+               <a href="#">
+                <div class="caption">
+                    <p>먼치킨</p>
+                    <p>이름 : 망고</p>
+                    <p>성별 : 남아</p>
+                    <p>나이 : 1살</p>
+                    <p>접종 : 2차</p>
+                    <P>장난꾸러기 망고</P>
+                </div>
+                </a>
+            </li>
+         
+            <li><a href=#><img src="images/catparcel3.jpg" alt="노르웨이숲"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>노르웨이숲</p>
+                    <p>이름 : 샤넌</p>
+                    <p>성별 : 여아</p>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 2차</p>
+                    <P>수다쟁이 샤넌</P>
+                </div>
+                </a>
+             </li>
+
+            <li><a href=#><img src="images/catparcel4.jpg" alt="벵갈"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>벵갈</p>
+                    <p>이름 : 로제</p>
+                    <p>성별 : 남자</p>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 2차</p>
+                    <P>호기심많은 로제</P>
+                </div>
+                </a>
+             </li>
+            <li><a href=#><img src="images/catparcel5.jpg" alt="아메리칸컬"></a>
+                <a href="#">
+                <div class="caption">
+                    <p>아메리칸컬</p>
+                    <p>이름 : 유지</p>
+                    <p>성별 : 여아</p>
+                    <p>나이 : 2살</p>
+                    <p>접종 : 2차</p>
+                    <P>스마트한 유지</P>
+                </div>
+                </a>
+             </li>
+        </ul>   
+        <button>고양이 더보기</button>
+    </div>
+
+        <div id="Area5">
+            <div class="samsung"><img src="images/삼성화재.png" alt="삼성화재">
+                <h2>분양 후 <span>삼성화재 애견보험까지</span> 한번에!</h2>
+                <a href="#" target="_blank">삼성화재 애니펫 가입하기</a>
+            </div>
+        </div>
+
+        <div id="Area6">
+            <div class="notice1">
+                <ul>
+                    <li><a href="noitce.html">고객센터</a></li>
+                    <li>02-2216-2316</li>
+                    <li>365일 연중 무휴<br>09:00~18:00 상담가능</li>
+                </ul>
+            </div>
+            <div class="notice2">
+                <h3><a href="noitce.html">리컴뉴스</a></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">tvN 식스센스3 8회 포메라니안 출연</a><time datetime="2022-07-08">2022-07-08</time></li>
+                        <li><a href="#">유기견 분양,입양 전문 사이트 '리컴패밀리',반려인사이의 입소문 퍼져</a><time datetime="2022-06-18">2022-06-18</time></li>
+                        <li><a href="#">저희 리컴패밀리는 365일 대기중입니다.</a><time datetime="2022-06-03">2022-06-03</time></li>
+                        <li><a href="#">리컴패밀리 삼성화재 애니펫 보험 할인 계약 체결</a><time datetime="2022-05-28">2022-05-28</time></li>
+                        <li><a href="#">고려대 병원, 연세 세브란스 리컴 패밀리와 협약 체결</a><time datetime="2022-04-01">2022-04-01</time></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notice3">
+                <a href="#"><img src="images/경품.png" alt=""></a>
+            </div>
+        </div>   
+          
+   <footer id="footer">
+        <div id="footerInner">
+            <address>
+                <div id="introduce">
+                    <p>서울시 동대문구 장한로27가길 37</p>
+                    <p><span>전화번호:02-2216-2316</span></p>
+                    <p>E-MAIL : <a href="mailto.seokb14@naver.com">seokb14@naver.com</a></p>
+                    <p class="copyright">연중 무휴 고객센터 : 09:00~18:00</p>    
+                </div>
+                <div id="introduce1">
+                    <p><span>리컴패밀리</span></p>
+                    <p>대표 : 서기범</p>
+                    <p>사업자번호:101-28-13924</p>
+                    <p>동물판매번호:3530000-037-2020-0022</p>
+                </div>
+                <div id="introduce2">
+                    <ul>
+                        <li><a href="http://www.instagram.com"><img src="images/인스타그램.png" alt=""></a></li>
+                        <li class="introimg"><a href="https://www.facebook.com/"><img src="images/페이스북.png" alt=""></a></li>
+                        <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="images/pngwing.com2.png" alt="" ></a></li>
+                    </ul>
+                    <a href="index.html"><img src="images/logo.png" alt="LICOMFAMILY"></a>
+                </div>
+            </address>
+        </div>
+</footer>   
+<!--푸터 영역 종료-->
+</div>
+
+<!--#wrapper 종료-->
+</body>
+
+</html>
+<!--메인페이지 추후 팝업페이지 및 서브페이지 제작, css랑 images(각 페이지에서 쓰는건 또 나눠서 정리)랑 js랑 fonts등 쓰는거 정리해서 집어넣기 -->
+<!--실제 제작 시 와이어프레임 보고 만들면 됨(설계도 역할)-->
+<!--시멘틱 있는건 그냥 쓰고 없는건 div로 영역 나눔. 큰 공간 id, 세부적 공간 class-->
+<!--html 홈페이지 뼈대 css꾸미고 레이아웃 javascript정적임을 동적으로 구현-->
+<!--영역별로 먼저 만들고html 꾸미기css-->
+<!--들여쓰기 잘하기************-->
+<!--쇼핑몰 홈페이지는 만드는 툴이 보통 있음. 사진이랑 가격만 나열되어 있는 방식이니 
+기업이나(회사 소개, 커뮤니티 등) 다른 아이디어(얼음나라, 인테리어) 혹은 리뉴얼(cgv, 이니스프리, 제주도, 서울 볼거리 검색: hangang.seoul.go.kr›archives) 하기, 일기장 같은건 어플로 쓰니깐 홈페이지라기엔 좀 그럼
+의식주 아나바다(요리레시피-만개의 레시피, 당근, 브런치(글 브런치, 어플) 참고), 여행홈페이지: 기차 움직이고 창문 누르면 풍경 흑백에서 변하고, 필름 이미지, 스폰지밥
+예쁜 홈페이지, 예쁜 사이트, 재밌는 홈페이지, 재밌는 사이트, 오설록, 타바론, 핸드크림 추천(브랜드: 록시땅, 바이레도, 탬버린즈, 불린, 화장품(아로마티카, 스킨푸드, 이니스프리))
+그림 클릭 시 강아지 그림 나왔다가 다시 클릭하면 들어가기, 사이드 메뉴바((쥬라기 공원)옆에 마우스 가져다 대면 메뉴 나옴, 메뉴 클릭시 메뉴 내려가기
+호버시 메뉴 내려가기, 메뉴 쫙 펼쳐졌다가 누르면 그림 진해지는거, 거미가 나와서 거미줄 호버하면 옆에 메류가 쫙 쏴짐)
+보통 기업 리뉴얼 함, 창작은 보통 팀프로젝트
+책 뒤에 보고 와이어프레임(설계도, 스케치 등 뼈대 만들어 놓기) 후 html 후 css 후 javascript 순서대로 하기-->
